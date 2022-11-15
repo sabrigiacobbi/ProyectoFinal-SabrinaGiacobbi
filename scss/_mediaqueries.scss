@@ -1,0 +1,245 @@
+@media all and (max-width:380px) {
+    .body{
+        width: 100%;
+        height: 100%;
+    }
+    .galeria {
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 130px 130px;
+        grid-template-areas:
+            "img1 img1"
+            "img1 img1"
+            "img2 img3"
+            "img4 img4"
+            "img4 img4"
+            "img5 img5"
+            "img5 img5"
+            "img6 img7"
+            "img8 img8"
+            "img8 img8"
+            ;
+            margin: 0;
+    }
+    
+    .galeria__imagen--1{
+        height: 250px;
+    }
+    .galeria__imagen--2{
+        height: 150px;
+    }
+    .galeria__imagen--3{
+        height: 150px;
+    }
+    .galeria__imagen--4{
+        height: 80px;
+    }
+    .titulo4{
+        margin-top: 10px;
+    }
+    .galeria__imagen--5{
+        height: 250px;
+    }
+    .galeria__imagen--6{
+        height: 150px;
+    }
+    .galeria__imagen--7{
+
+        height: 150px;
+    }
+    .galeria__imagen--8{
+
+        height: 250px;
+    }
+    .card{
+        margin: 0%;
+    }
+    .textonaturaleza p{
+        margin-left: 20px;
+        width: 300px;
+    }
+    .tituloprincipal{
+        margin-left: 35px;
+    }
+
+    .contenedorsecciones{
+        height: 180px;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .listasecciones{
+        margin: auto;
+        flex-direction: column;
+        li{
+            background-color: rgba(190, 220, 189, 0.89);
+            margin-top: 10px;
+            width: 290px;
+            border-radius: 8px; 
+            display: flex;
+            justify-content: center;}
+    }
+    .contenedorimagenes{
+        margin-top: 20px;
+        margin: 5% ;
+    }
+    .imagenprincipal1{
+        height: 250px;
+    }
+    .containerhistoria{
+        display: flex;
+        flex-direction: column;
+    }
+    .textohistoria {
+        p{
+            width: 340px;
+            margin-left: 10px;}
+        h2{
+            margin-left: 130px;
+            margin-top: 0px;}
+    }
+    .imagenhistoria img{
+        width: 320px;
+        height: 480px;
+        margin: 20px 25px 20px 25px;
+    }
+    .carousel-inner{
+        width: 350px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }   
+    .titulohistoria{
+        width: 350px;
+        margin-left: 10px;
+    }
+    .seccionoticias{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .noticias{
+        margin-top: 30px;
+        margin-left: 0px;
+        height: 57px;
+        width: 100%;
+    }
+    .articulo1{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .textoprincipal2{
+    h2{
+        width: 300px;
+        margin-left: 30px;
+    }
+    img{
+        width: 300px;
+        height: 250px;
+        margin-left: 30px;
+    }
+    }
+    .textovideo{
+        display: inline-block;
+    }
+    .divisionvideos{
+        flex-direction: column;
+    }
+    .video1, .video2{
+        width: 340px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .divisiontexto h4{
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .divisiontexto2{
+        margin-top: 40px;
+        width: 250px;
+    }
+    .contenedorindice{
+        flex-direction: column;
+    }
+    .contenido__indice{
+        flex-direction: column;
+        width: 350px;
+    }
+    .contenido__art1 h5{
+        margin-left: 25px;
+    }
+    .texto1__rrr{
+        width: 280px;
+        margin-left: 40px;
+    }
+    .texto2__rrr{
+        width: 280px;
+        margin-left: 40px;
+    }
+    .texto3__rrr{
+        width: 280px;
+        margin-left: 40px;
+    }
+    .texto4__rrr {
+        width: 280px;
+        margin-left: 40px;
+    }
+    .contenido__art1-2{
+        justify-content: flex-start;
+    }
+    .titulo__reciclar {
+        margin-left: 25px;
+    }
+    .plasticos{
+        width: 280px;
+        margin-left: 5px;
+    }
+    .art2{
+        flex-direction: column;
+    }
+    .art2 div p{
+        width: 280px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .texto__art3{
+        width: 280px;
+        margin-left: 40px;
+    }
+    .ecologico{
+        margin-left: 40px;
+    }
+    .texto__art4{
+        width: 280px;
+        margin-left: 40px;
+    }
+    
+    .titulo__reciclar{
+        margin: 30px 30px 0px 50px;
+    }
+    .titulo__plasticos{
+        margin-left: 50px;
+    }
+    .titulo__basura{
+        margin-left: 40px;
+    }
+    .lista__indice{
+        margin-left: 50px;
+    }
+    .footer{
+        width: 100%;
+        margin: 0%;
+    }
+    .footer div h4{
+        margin-left: 19px;
+    }
+    .footer div h3{
+        margin-left: 15px;
+        margin-bottom: 23px;
+    }
+}
+
+
+        

@@ -1,0 +1,388 @@
+@import "barranav", "footer", "general", "mediaqueries";
+
+/*PAGINA PRINCIPAL*/
+.imagenprincipal1{
+    width: 160vh;
+    height: 80vh;
+    border-radius: 8px;
+
+}    
+.contenedorimagenes{
+    display: flex;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}    
+
+
+
+
+/*SECCIONES*/
+/*ADENTRATE*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 200px);
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img5 img5 img6 img7" "img5 img5 img8 img8";
+    gap: 8px;
+    margin-left: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .galeria__imagen {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .galeria__imagen--1::before, .galeria__imagen--2::before, .galeria__imagen--3::before, .galeria__imagen--4::before, .galeria__imagen--5::before, .galeria__imagen--6::before, .galeria__imagen--7::before, .galeria__imagen--8::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(84, 108, 34, 0.8);
+    transform: translate(100%);
+    transition: transform .4s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  
+  .galeria__imagen--1::before {
+    content: "HOGAR COMPARTIDO";
+  }
+  
+  .galeria__imagen--2::before {
+    content: "OCUPARNOS DE CUIDAR LO NUESTRO";
+  }
+  
+  .galeria__imagen--3::before {
+    content: "ABRAZARLO Y QUERERLO BIEN";
+  }
+  
+  .galeria__imagen--4::before {
+    content: "AGRADECER POR EL ESPACIO";
+  }
+  
+  .galeria__imagen--5::before {
+    content: "SENTIRNOS UNO CON LA NATURALEZA";
+  }
+  
+  .galeria__imagen--6::before {
+    content: "MANTENER LA ESPERANZA";
+  }
+  
+  .galeria__imagen--7::before {
+    content: "TODO PUEDE ESTAR BIEN";
+  }
+  
+  .galeria__imagen--8::before {
+    content: "TODO EMPIEZA EN NOSOTROS";
+  }
+  
+  .galeria__imagen {
+    &:hover::before {
+      transform: translate(0);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.imagenes__galeria {
+    border-radius: 8px;
+}
+
+.galeria__imagen--1 {
+    grid-area: img1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.galeria__imagen--2, .galeria__imagen--3, .galeria__imagen--5, .galeria__imagen--6, .galeria__imagen--7, .galeria__imagen--8 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.galeria__imagen--2 {
+    grid-area: img2;
+}
+
+.galeria__imagen--3 {
+    grid-area: img3;
+}
+
+.galeria__imagen--4 {
+    grid-area: img4;
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+    border: 1px dashed darkolivegreen;
+    border-radius: 8px;
+    display: flex;
+    margin: auto;
+}
+
+.texto4, .titulo4 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.galeria__imagen--5 {
+    grid-area: img5;
+    margin-top: 10px;
+}
+
+.galeria__imagen--6 {
+    grid-area: img6;
+}
+
+.galeria__imagen--7 {
+    grid-area: img7;
+}
+
+.galeria__imagen--8 {
+    grid-area: img8;
+}
+
+.card {
+    background-color: rgba(84, 108, 34, 0.45);
+    border-radius: 7px;
+    width: 100%;
+    margin: 10px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.card-img-top {
+    width: 350px;
+    border-radius: 8px 8px 8px 8px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*MUNNDO VEGANO/HISTORIA*/
+.containerhistoria {
+    display: grid;
+    grid-template-columns: 0.8fr 0.7fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "titulo imagen" "texto imagen";
+  }
+  
+  .titulohistoria {
+    grid-area: titulo;
+    width: 600px;
+    margin: 50px;
+    margin-left: 100px;
+    text-align: center;
+    border: 1px dashed darkolivegreen;
+    border-radius: 8px;
+  
+    h5 {
+      margin: 40px;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 25px;
+    }
+  }
+  
+  .imagenhistoria {
+    grid-area: imagen;
+  
+    img {
+      width: 400px;
+      height: 600px;
+      border-radius: 8px;
+      margin-left: 80px;
+      margin-top: 50px;
+    }
+  }
+  
+  .textohistoria {
+    grid-area: texto;
+  
+/*SOMOS NATURALEZA*/
+.carousel-inner{
+    width: 700px;
+    border-radius: 8px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}    
+.imagencarrousel{
+    height: 500px;
+}    
+.textonaturaleza p{
+    width: 600px;
+}    
+.textonaturaleza h1{
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+}    
+
+
+
+/*COLABORACIONES*/
+.titulocolaboraciones {
+    border: 2px solid #556B2F;
+    width: 850px;
+    border-radius: 7px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .textocolaboraciones {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  
+  .articulos__colaboraciones {
+    display: flex;
+  }
+  
+  .cuadrado__colaboraciones {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(84, 108, 34, 0.55);
+    border-radius: 8px;
+    margin: 30px 30px 30px 140px;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .lista__colaboraciones {
+    margin: 20px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 40px;
+  
+    li a {
+      padding: 0px 40px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.69);
+      text-decoration: none;
+      list-style-type: none;
+      padding: 0px 20px;
+      color: #FFFFFF;
+      padding: 10px;
+    }
+  }
+  
+  .contenido__colaboraciones {
+    display: flex;
+  }
+  
+  .greenpeace__titulo {
+    margin-top: 30px;
+    margin-left: 55px;
+    background-color: #556B2F;
+    width: 150px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .greenpeace__texto {
+    width: 500px;
+    margin-left: 0px;
+    text-align: justify;
+  }
+  
+  .imagen__colaboraciones {
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 6px;
+  }
+  
+  .imagen2__colaboraciones {
+    width: 370px;
+    border-radius: 6px;
+    margin-right: 50px;
+  }
+  
+  .seashepherd__titulo {
+    margin-top: 30px;
+    margin-left: 55px;
+    background-color: #556B2F;
+    width: 150px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  
+  .seashepherd__texto {
+    width: 500px;
+    margin-left: 30px;
+    text-align: justify;
+  }
+  
+  .cascosverdes__titulo {
+    margin-top: 30px;
+    margin-left: 55px;
+    background-color: #556B2F;
+    width: 180px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  
+  .cascosverdes__texto {
+    width: 500px;
+    margin-left: 0px;
+    text-align: justify;
+  }
+  
+  .imagen3__colaboraciones {
+    width: 300px;
+    border-radius: 6px;
+    margin-right: 50px;
+}
+
+.bancobosques__titulo {
+    margin-top: 30px;
+    margin-left: 55px;
+    background-color: #556B2F;
+    width: 210px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.bancobosques__texto {
+    width: 450px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.imagen4__colaboraciones {
+    width: 450px;
+    border-radius: 6px;
+    margin-right: 50px;
+}
+}

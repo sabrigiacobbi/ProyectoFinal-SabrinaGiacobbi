@@ -1,0 +1,49 @@
+/* SECCIONES */
+.header {
+    display: flex;
+}
+
+.contenedorsecciones{
+    background-color: rgba(84, 108, 34, 0.68);
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.tituloprincipal {
+    color: rgba(0, 0, 0, 0.69);
+    text-align: center;
+    margin-top: 15px;
+    h1 {
+        font-family: 'Italiana', serif;
+        font-size: 3.3rem;
+        align-self: center;
+    }
+}
+
+.listasecciones {
+    display: flex;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+    li {
+        a {
+            padding: 0px 40px;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.69);
+            text-decoration: none;
+            padding: 0px 20px;
+            color: #FFFFFF;
+        }
+        list-style-type: none;
+        font-family: "Italiana";
+    }
+}
+
+.secciones:hover {
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
